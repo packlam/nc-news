@@ -1,0 +1,13 @@
+.add-comment {
+  width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.add-comment textarea {
+  width: 600px;
+  height: 75px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  resize: none;
+}

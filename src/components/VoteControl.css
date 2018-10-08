@@ -1,0 +1,15 @@
+.vote-control {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.arrow {
+  font-size: 12pt;
+  cursor: pointer;
+  color: grey;
+}

@@ -1,0 +1,38 @@
+.article {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: white;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.article-content {
+  margin: 10px 10px 10px 5px;
+  padding: 5px;
+  text-align: left;
+}
+
+.article a:link{
+  text-decoration: none;
+}
+
+.posted-by {
+  font-size: 10pt;
+  color: grey;
+  margin: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 14pt;
+  color: black;
+}
+
+.comment-count {
+  font-size: 10pt;
+  color: grey;
+}

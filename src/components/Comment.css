@@ -1,0 +1,28 @@
+.comment-container {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: white;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.comment-container-right {
+  margin: 10px 10px 10px 5px;
+  padding: 5px;
+}
+
+.comment-text {
+  text-align: left;
+}
+
+.comment-date {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 10pt;
+  color: grey;
+}
