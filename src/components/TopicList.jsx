@@ -11,7 +11,7 @@ class TopicList extends React.Component {
   render() {
     return (
       <div className="topic-list">
-        <h1>Topics</h1>
+        <h3>Trending Topics</h3>
         {this.state.topics.map(topic => {
           return (
             <Link to={`/topics/${topic.slug}`} key={topic.slug}>
@@ -25,7 +25,7 @@ class TopicList extends React.Component {
 
   componentDidMount() {
     api.getTopics()
-    .then(topics => this.setState({topics}) )
+    .then(topics => this.setState({ topics }))
   }
 }
 

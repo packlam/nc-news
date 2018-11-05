@@ -16,8 +16,6 @@ class VoteControl extends React.Component {
       </div>
     )
   }
-
-  API_URL = 'https://pacific-retreat-67567.herokuapp.com/api'
   
   handleClick = (vote) => {
     const { itemType, itemId } = this.props

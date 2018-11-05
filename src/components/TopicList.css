@@ -1,15 +1,23 @@
 .topic-list {
+  height: 200px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 25px;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 11pt;
+}
+
+.topic-list a:link {
   color: black;
 }
 
-a:link {
+.topic-list a:visited {
   color: black;
 }
 
-a:visited {
-  color: black;
-}
-
-a:hover {
+.topic-list a:hover {
   color: black;
 }

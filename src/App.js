@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import ArticleList from './components/ArticleList';
-import TopicList from './components/TopicList'
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import ArticleWithComments from './components/ArticleWithComments'
 import LoginPage from './components/LoginPage';
+import ContainerMain from './components/ContainerMain';
 
 class App extends Component {
   state = {
@@ -16,11 +14,10 @@ class App extends Component {
     return (
       <div className="App">
         <Route path="/" render={(props) => <Navigation {...props} currentUser={this.state.currentUser} handleLogout={this.handleLogout}/>} />
-        <Route exact path="/" component={ArticleList} />
-        <Route exact path="/topics" component={TopicList}/>
-        <Route exact path="/topics/:topic_slug" component={ArticleList} />
-        <Route exact path="/topics/:topic_slug/:article_id" render={(props) => <ArticleWithComments {...props} currentUser={this.state.currentUser}/>} />
-        <Route exact path="/login" render={() => <LoginPage handleLogin={this.handleLogin}/>} />
+        <Switch>
+          <Route path="/login" render={() => <LoginPage handleLogin={this.handleLogin}/>} />
+          <Route path="/" render={() => <ContainerMain currentUser={this.state.currentUser}/>} />
+        </Switch>
       </div>
     );
   }
