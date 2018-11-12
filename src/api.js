@@ -33,3 +33,7 @@ export const updateVoteCount = (itemType, itemId, vote) => {
 export const addComment = (articleId, comment) => {
   return axios.post(`${API_URL}/articles/${articleId}/comments`, comment).then(({data}) => data)
 }
+
+export const addArticle = (articleTopic, newArticle) => {
+  return axios.post(`${API_URL}/topics/${articleTopic}/articles`, newArticle).then(({data}) => data )
+}

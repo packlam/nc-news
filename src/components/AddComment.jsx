@@ -25,7 +25,7 @@ class AddComment extends React.Component {
   }
 
   handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     const { articleId, userId } = this.props
 

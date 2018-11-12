@@ -5,3 +5,7 @@
 .login-page .login-box {
   margin-left: 5px;
 }
+
+.login-page input {
+  width: 200px;
+}

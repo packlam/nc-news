@@ -1,0 +1,17 @@
+.add-article {
+  width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.add-article select, textarea, input {
+  width: 600px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.add-article textarea {
+  height: 75px;
+}

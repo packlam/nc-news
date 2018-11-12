@@ -16,8 +16,13 @@
   text-align: left;
 }
 
-.article a:link{
+.article a:link {
   text-decoration: none;
+  color: black;
+}
+
+.article a:visited {
+  color: black;
 }
 
 .posted-by {

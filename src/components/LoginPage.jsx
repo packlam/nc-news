@@ -32,7 +32,8 @@ class LoginPage extends React.Component {
   }
 
   handleClick = (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    
     api.getUserByUsername(this.state.username)
     .then(user => {
       this.props.handleLogin(user)

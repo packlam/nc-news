@@ -46,11 +46,13 @@ class ArticleWithComments extends React.Component {
   fetchArticle() {
     api.getArticleById(this.props.match.params.article_id)
     .then(article => this.setState({ article }))
+    .catch(console.log)
   }
 
   fetchComments() {
     api.getCommentsByArticleId(this.props.match.params.article_id)
     .then(comments => this.setState({ comments }))
+    .catch(console.log)
   }
 
   toggleSubmitted = () => {
